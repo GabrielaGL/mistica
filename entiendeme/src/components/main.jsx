@@ -44,7 +44,7 @@ class Main extends React.Component {
 									</ul>
 									<form className="d-flex">
 										<input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Busqueda" />
-											<button className="btn btn-outline-light goldButton" type="submit">Buscar</button>
+										<button className="btn btn-outline-light goldButton" type="submit">Buscar</button>
 									</form>
 								</div>
 							</div>
@@ -142,8 +142,8 @@ class Main extends React.Component {
 											resultados.</b></span>
 									</div>
 
-									<div style={{overflow:'auto'}} id="nextprevious">
-										<div style={{float:'right'}}>
+									<div style={{ overflow: 'auto' }} id="nextprevious">
+										<div style={{ float: 'right' }}>
 											<button className="formButton" type="button" id="prevBtn"><i className="fa fa-angle-double-left"></i></button>
 											<button className="formButton" type="button" id="nextBtn"><i className="fa fa-angle-double-right"></i></button>
 										</div>
@@ -195,6 +195,158 @@ class Main extends React.Component {
 						</div>
 					</div>
 				</section>
+
+
+				<section id="testimonialsSection">
+
+					<div id="testimonials" className="carousel slide" data-bs-ride="carousel">
+						<div className="carousel-inner">
+							<div className="carousel-item active" data-bs-interval="8800">
+								<h3>"Había intentado con diversos métodos para balancear mi estado de salud. En 'entiéndeme' pude comprender
+									varios aspectos de mi vida y mi cuerpo.<br /> ¡Gracias, <b>entiéndeme</b>!"</h3>
+								<img src="images/Testimonial_3.jpg" className="d-block w-100" alt="testimonio hombre peruano" />
+								<p>Trujillo, Perú</p>
+							</div>
+							<div className="carousel-item" data-bs-interval="8800">
+								<h3>"Estaba pasando por estados emocionales que afectaban mi vida laboral y familiar. Ahora que entiendo de
+									donde provenía eso soy más feliz."</h3>
+								<img src="images/Testimonial_1.jpg" className="d-block w-100" alt="testimonio mujer argentina" />
+								<p>Córdoba, Argentina</p>
+							</div>
+							<div className="carousel-item" data-bs-interval="8800">
+								<h3>"Nunca había considerado la importancia del autoconocimiento, y menos en lo sexual. El saber sobre mi yoni
+									ha optimizado mi vida sexual totalmente."</h3>
+								<img className="d-block w-100" src="images/Testimonial_4.jpg" alt="testimonio hombre ecuatoriano" />
+								<p>Cuenca, Ecuador</p>
+							</div>
+							<div className="carousel-item" data-bs-interval="8800">
+								<h3>"El conocer mi Nakshatra me ha ayudado a entenderme y aceptarme en mis días 'buenos' y 'malos', y a
+									mejorar mis relaciones."</h3>
+								<img className="d-block w-100" src="images/Testimonial_2.jpg" alt="testimonio mujer colombiana" />
+								<p>Villavicencio, Colombia</p>
+							</div>
+						</div>
+						<button className="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+							<span className="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span className="visually-hidden">Previo</span>
+						</button>
+						<button className="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+							<span className="carousel-control-next-icon" aria-hidden="true"></span>
+							<span className="visually-hidden">Siguiente</span>
+						</button>
+					</div>
+				</section>
+
+
+
+
+				<section id="press">
+					<img src="images/laboratoria.png" alt="lab-logo" />
+					<img src="images/tnw.png" alt="tnw-logo" />
+					<img src="images/bizinsider.png" alt="biz-insider-logo" />
+					<img src="images/td.png" alt="td-logo" />
+
+				</section>
+
+
+
+				<section id="pricing">
+					<div className="w-80 px-3 py-3 pt-md-4 pb-md-4 mx-auto text-center">
+						<h1 className="font-weight-bold">Un <b>plan</b> <br />para la necesidad de cada <br /><b>Nakshatra</b>.</h1>
+						<p className="lead">Completos y asequibles planes para conocerte y conocer a tus seres queridos.</p>
+					</div>
+					<div className="container text-center">
+						<div className="row">
+							<div className="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto">
+								<div className="pricing-item">
+									<div className="pt-4 pb-2 plan-name">
+										<h4>Soorya Rasi</h4>
+									</div>
+									<div className="pricing-description">
+										<ul className="list-unstyled mt-3 mb-1">
+											<li><i className="fa fa-check-circle check"></i> 3 consultas por día</li>
+											<li><i className="fa fa-check-circle check"></i> Asistencia Técnica 24/7</li>
+											<br />
+											<br />
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+									<div className="pricing-price pb-1 text-primary mb-3">
+										<h1 className="price">
+											<span></span>Gratuito
+										</h1>
+									</div>
+									<div className="pricing-button pb-4">
+										<button type="button" className="btn btn-lg btn-outline-primary w-75">Vamos</button>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto">
+								<div className="pricing-item middle">
+									<div className="pt-4 pb-2 plan-name">
+										<h4>Chandra Rasi</h4>
+									</div>
+									<div className="pricing-description">
+										<ul className="list-unstyled mt-3 mb-1">
+											<li><i className="fa fa-check-circle check"></i>Consultas Ilimitadas</li>
+											<li><i className="fa fa-check-circle check"></i>1 consulta de compatibilidad personalizada mensual</li>
+											<li><i className="fa fa-check-circle check"></i>Asistencia Técnica 24/7</li>
+											<br />
+											<li></li>
+										</ul>
+									</div>
+									<div className="pricing-price pb-1 text-primary mb-3">
+										<h1 className="price">
+											<span>£</span>49
+										</h1>
+									</div>
+									<div className="pricing-button pb-4">
+										<button type="button" className="btn btn-lg btn-outline-light w-75 goldButton ">Vamos</button>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-4 col-md-6 col-sm-10 pb-4 d-block m-auto">
+								<div className="pricing-item">
+									<div className="pt-4 pb-2 plan-name">
+										<h4>Nakshatra</h4>
+									</div>
+									<div className="text-primary check">
+									</div>
+									<div className="pricing-description ">
+										<ul className="list-unstyled mt-3 mb-1">
+											<li><i className="fa fa-check-circle check"></i>Consultas Ilimitadas</li>
+											<li><i className="fa fa-check-circle check"></i>3 consultas de compatibilidad personalizadas mensuales</li>
+											<li><i className="fa fa-check-circle check"></i>Prioridad de Agenda</li>
+											<li><i className="fa fa-check-circle check"></i>Asistencia Técnica 24/7</li>
+										</ul>
+									</div>
+									<div className="pricing-price pb-1 text-primary mb-3">
+										<h1 className="price">
+											<span>£</span>99
+										</h1>
+									</div>
+									<div className="pricing-button pb-4">
+										<button type="button" className="btn btn-lg btn-outline-primary w-75">Vamos</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+
+
+				<footer id="footer">
+					<a href="https://twitter.com/" target="_blank" rel="noreferrer"><i className="fab fa-twitter contact-icon"></i></a>
+					<a href="https://web.facebook.com/" target="_blank" rel="noreferrer"><i className="fab fa-facebook contact-icon"></i></a>
+					<a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fab fa-instagram contact-icon"></i></a>
+					<a href="mailto:info@entiendeme.com" target="_blank" rel="noreferrer"><i className="fas fa-envelope contact-icon"></i></a>
+
+					<p>© Copyright 2023 entiéndeme</p>
+
+				</footer>
 
 			</React.Fragment>
 		);
