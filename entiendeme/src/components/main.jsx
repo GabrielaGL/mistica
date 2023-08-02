@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+
+import logo1 from "../assets/imgs/logo1.png"
+
 
 class Main extends React.Component {
 
@@ -12,7 +17,7 @@ class Main extends React.Component {
 						<nav className="navbar navbar-expand-md navbar-dark">
 							<div className="container-fluid " id="home">
 								<a className="navbar-brand" href="#home">
-									<img src="../assets/imgs/logo1.png" alt="Logo" width="222" height="222" className="d-inline-block align-text-top" />
+									<img src={logo1} alt="Logo" width="222" height="222" className="d-inline-block align-text-top" />
 								</a>
 								<button className="navbar-toggler" type="button" data-bs-toggle="collapse"
 									data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -64,8 +69,6 @@ class Main extends React.Component {
 										<br />
 									</p>
 									<a type="button" className="btn btn-dark btn-lg download-btn aware" href="#form"> Conócete </a>
-									<img className="col-6 float-md-end mb-3 me-md-3 carousel-img1" src="../assets/imgs/mockup-manos-mujer.png"
-										alt="manos mujer con App" />
 								</div>
 								<div className="carousel-item clearfix" data-bs-interval="8800">
 									<img className="col-6 float-md-start mb-3 ms-md-3 carousel-img2" src="../assets/imgs/mockup-manos-hombre.png"
@@ -85,7 +88,7 @@ class Main extends React.Component {
 									</p>
 									<a type="button" className="btn btn-dark btn-lg download-btn aware" href="#form"> Conócete </a>
 									<a type="button" className="btn btn-outline-light btn-lg download-btn goldButton"
-										href="#testimonialsSection">Testimonios</a> -->
+										href="#testimonialsSection">Testimonios</a>
 								</div>
 							</div>
 							<button className="carousel-control-prev" type="button" data-bs-target="#mainContent" data-bs-slide="prev">
@@ -339,8 +342,8 @@ class Main extends React.Component {
 
 
 				<footer id="footer">
-					<a href="https://twitter.com/" target="_blank" rel="noreferrer"><i className="fab fa-twitter contact-icon"></i></a>
-					<a href="https://web.facebook.com/" target="_blank" rel="noreferrer"><i className="fab fa-facebook contact-icon"></i></a>
+					<a href="https://twitter.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="fab fa-facebook" /></a>
+					<a href="https://web.facebook.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
 					<a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fab fa-instagram contact-icon"></i></a>
 					<a href="mailto:info@entiendeme.com" target="_blank" rel="noreferrer"><i className="fas fa-envelope contact-icon"></i></a>
 
