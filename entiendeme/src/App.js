@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom' 
 
-import Main from './components/main';
+import Main from './components/main.jsx';
 
 function App() {
   return (
