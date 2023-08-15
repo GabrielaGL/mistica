@@ -1,1 +1,0 @@
-export const Apiurl = 'https://api.prokerala.com/v2/astrology/birth-details';
