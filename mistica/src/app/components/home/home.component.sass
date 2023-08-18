@@ -5,16 +5,17 @@ header
     display: grid
     align-content: center
     justify-content: center
+    margin-top: -8px
 
 .btn
     @include btn
     background-image: linear-gradient(to right, $ygold, $orange)!important
     color: white
     font-weight: 600
-    border: 1px solid black
+    border: 1px solid $dark
     margin-bottom: 20px
     &:hover
-        box-shadow: 4px 4px 0 black
+        box-shadow: 4px 4px 0 $dark
 
 .btn2
     @include btn2
@@ -188,3 +189,40 @@ header
     p
         font-size: 18px
         width: 615px
+
+.nl-container
+    display: flex
+    justify-content: center
+    background-color: white
+    height: 700px
+    .bg-nl
+        background-image: url(/assets/imgs/bg-nl.png)
+        width: 1060px
+        display: flex
+        justify-content: center
+        margin-top: 110px
+        margin-bottom: 110px
+        background-repeat: no-repeat
+        background-size: cover
+    .newsletter
+        background-color: $dark
+        border-radius: 25px
+        margin-top: 50px
+        margin-bottom: 50px
+        width: 928px
+        h1
+            color: white
+            font-size: 40px
+            text-align: center
+        button
+            margin-top: 30px
+
+.input-container-d
+    @extend .input-container
+    margin-left: 169px
+    label
+        color: white
+    input
+        background-color: $dark
+        width: 552px
+        color: white
