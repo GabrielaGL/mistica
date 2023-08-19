@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class ApiService {
   url: string = environment.apiUrl;
-  tokenA: string = environment.oauth2Token;
+  token: string = environment.oauth2Token;
   client: string = environment.clientId;
 
   private queryParameters: querypI[] = [];
@@ -18,17 +18,17 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getToken(): Observable<any> {
-    let url = this.url;
-    const headers = new HttpHeaders({
-      'client_credentials&client_id': this.tokenA,
-      'client_secret': this.client
+    let url = this.url + '/token';
+    const tokens = ({
+      'client_id': this.client,
+      'client_secret': this.token
     })
-
-    return this.http.post(url, { headers });
+    
+    return this.http.post(url, tokens);
   }
 
   getBirthChart(token:string, queryParameters:any): Observable<any> {
-    let url = this.url + 'v2/astrology/birth-details';
+    let url = '/v2/astrology/birth-details';
 
     const headers = new HttpHeaders({
       'Authorization': `Bearer ${ token }`,
