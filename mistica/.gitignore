@@ -43,3 +43,5 @@ Thumbs.db
 
 # Env api key
 **/environments
+/proxy.config.json
+
