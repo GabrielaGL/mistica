@@ -1,7 +1,7 @@
 @import /src/styles.sass
 
 header
-    background-color: $beige
+    background-color: white
     display: grid
     align-content: center
     justify-content: center
@@ -17,16 +17,23 @@ header
     &:hover
         box-shadow: 4px 4px 0 $dark
 
+.divbtn
+    display: flex
+    justify-content: center
+
 .btn2
     @include btn2
     background-image: linear-gradient(to right, $ygold, $orange)!important
+    font-weight: 400
     margin-bottom: 20px
     &:hover
         background-color: $orange
+        font-weight: 600
 
 .container
     display: flex
     justify-content: center
+    background-color: $beige
 
 .principal
     background-color: white
@@ -47,9 +54,7 @@ header
             font-size: 18px
             width: 615px
         button
-            margin-left: 230px
             margin-top: 23px
-            font-weight: 600
             font-size: 17px
 
 .faq
@@ -63,10 +68,12 @@ header
             font-weight: 800
             display: flex
             justify-content: center
-    .card
-        border-radius: 25px
-        border: 2px solid $orange
-        background-color: white
+    .glassCard
+        border: 1px solid rgba(255, 255, 255, .25)
+        border-radius: 20px
+        background-color: rgba(255, 255, 255, 0.45)
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25)
+        backdrop-filter: blur(15px)
         display: flex
         justify-content: center
         margin-bottom: 30px
@@ -187,6 +194,7 @@ header
         transform: rotateX(180deg)
 
 .extra-info
+    height: 700px
     background-color: white
     margin-top: -17px
     display: flex
