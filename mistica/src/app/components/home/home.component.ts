@@ -18,9 +18,24 @@ export class HomeComponent {
     country: new FormControl('', Validators.required),
   })
 
-  seeForm(form:any) {
-    console.log(form.value);
+  seeForm(form: any) {
+    console.log(form);
+    const msguser: HTMLElement = document.getElementById('msg-user') as HTMLElement;
+    msguser.innerHTML = form.name + ' estos son tus resultados';
+
+    const timeZone = form.country.slice(-6);
+    const location = form.country.slice(0, -7);    
+
+    const queryP = {
+      ayanamsa: 1,
+      coordinates: location, 
+      datetime: form.date + 'T' + form.time + ':00' + timeZone,
+      la: 'en',
+    } 
+
+    console.log(queryP);
+    
   }
 
-  
+
 }
